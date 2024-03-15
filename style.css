@@ -1,0 +1,249 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  color: #ecdbc9;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Join Form ------- */
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form label input,
+form label select {
+  margin-left: 10px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: auto;
+}
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query (DESKTOPS) ------- */
+@media all and (min-width: 768px) {
+ 
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+  
+  #join {
+    display: flex;
+    align-items: center;
+    margin-left: 0px
+  }
+
+  #join img {
+    width: auto; 
+    max-width: 60%; 
+    margin-right: 60px; 
+  }
+ 
+  #about h2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+  }
+
+  #about img {
+    width: 30%; 
+    max-width: 300px; 
+    margin-right: 20px; 
+  }
+  
+  #about p {
+    flex: 1; 
+    max-width: 50%; 
+    margin: 0; 
+  }
+  
+  .download-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+  }
+
+  #download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+  }
+
+  #download h2,
+  #download p {
+    max-width: 70%; 
+  }
+
+  #download img {
+    width: 60%;
+    max-width: 450px;
+    margin-left: 20px; 
+  }
+
+  #blog h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blog-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-item img {
+    max-width: 100%; 
+  }
+
+  .blog-content h3,
+  .blog-content p {
+    margin: 10px 0 0; 
+  }
+
+  
+  .blog-content > * {
+    width: 100%; 
+  }
+}
